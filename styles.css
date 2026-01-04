@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #000000;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    color: #333;
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', sans-serif !important;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-banner {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.profile-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-avatar {
+    margin-top: -90px;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-avatar img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #2a2a2a;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    padding: 0 2rem;
+}
+
+.profile-location {
+    padding: 0 2rem;
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-nav {
+    display: flex;
+    padding: 0 2rem 2rem 2rem;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.profile-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.profile-nav a:hover {
+    background: #667eea;
+    color: white;
+}
+
+.section {
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+.setup-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.setup-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #1a1a1a;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+}
+
+.setup-label {
+    font-weight: 600;
+    color: #cccccc;
+}
+
+.setup-value {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.setup-value a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.setup-value a:hover {
+    text-decoration: underline;
+}
+
+.links-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.link-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.link-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.twitch-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.link-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.link-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.link-url {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.ranks-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.rank-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.rank-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rank-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.rank-game {
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+}
+
+.rank-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.rank-tier {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.settings-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #444444;
+}
+
+.tab-btn {
+    padding: 0.8rem 1.5rem;
+    background: none;
+    border: none;
+    color: #cccccc;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab-btn:hover {
+    color: #667eea;
+}
+
+.tab-btn.active {
+    color: #667eea;
+    border-bottom-color: #667eea;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #444444;
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-label {
+    font-weight: 600;
+    color: #cccccc;
+}
+
+.settings-content h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+}
+
+.setting-value {
+    color: #ffffff;
+    font-weight: 500;
+    word-break: break-all;
+    text-align: right;
+    max-width: 60%;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+
+    .profile-name {
+        font-size: 2rem;
+    }
+
+    .profile-nav {
+        gap: 0.5rem;
+    }
+
+    .section {
+        padding: 1.5rem;
+    }
+
+    .setting-value {
+        max-width: 50%;
+        font-size: 0.9rem;
+    }
+}
+
+/* Make ranks display as squares in a horizontal row */
+.ranks-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.rank-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    position: relative; /* keep for player tag positioning if needed */
+}
+
+.rank-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rank-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.rank-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.rank-game {
+    font-weight: 600;
+    font-size: 1rem;
+    display: block;
+}
+
+.rank-tier {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
